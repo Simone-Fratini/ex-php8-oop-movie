@@ -1,6 +1,14 @@
 <?php
+require_once './models/Movie.php';
+require_once './models/Genre.php';
 
 
+$actionGenre = new Genre();
+$actionGenre->genre = "azione";
+
+$interstellar = new Movie("interstellar", "pippo", $actionGenre, 2019, 198, "efhjwfoiewfoswefj", 4.5);
+
+var_dump($interstellar);
 
 
 ?>

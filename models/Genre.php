@@ -1,6 +1,6 @@
 <?php
 
-class Genre extends Movie
+class Genre
 {
 
     public $genre;
