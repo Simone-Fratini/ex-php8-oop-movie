@@ -20,4 +20,13 @@ class Movie
         $this->poster = $_poster;
         $this->rating = $_rating;
     }
+
+    public function getMovieDuration()
+    {
+        $time = $this->duration;
+        $hours = floor($time / 60);
+        $minutes = $time % 60;
+        $timeString = $hours . "h e " . $minutes . " minuti";
+        return $timeString;
+    }
 }

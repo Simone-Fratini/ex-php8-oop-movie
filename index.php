@@ -10,6 +10,8 @@ $interstellar = new Movie("interstellar", "pippo", $actionGenre, 2019, 198, "efh
 
 var_dump($interstellar);
 
+echo $interstellar->getMovieDuration();
+
 
 ?>
 
